@@ -15,7 +15,7 @@ if __name__ == "__main__":
     cookies = {i.split("=")[0]:i.split("=")[1] for i in cookies.split("; ")}
     print(cookies)
 
-    r = requests.get("http://www.renren.com/327550029/profile",headers=headers,cookies=cookies)
+    r = requests.get("http://www.renren.com/327550029/profile", headers=headers,cookies=cookies)
 
     #保存页面
     with open("renren3.html","w",encoding="utf-8") as f:

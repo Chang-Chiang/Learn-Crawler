@@ -27,7 +27,7 @@ class TiebaSpider:
 
     def save_html(self, html_str, page_num):  # 保存html字符串
         file_path = "{}—第{}页.html".format(self.tieba_name, page_num)
-        with open(file_path, "w", encoding="utf-8") as f:  # "李毅—第4页.html"
+        with open(file_path, "w", encoding="utf-8") as f:  # "甄嬛传—第4页.html"
             f.write(html_str)
 
     def run(self):  # 实现主要逻辑
@@ -42,5 +42,5 @@ class TiebaSpider:
 
 
 if __name__ == '__main__':
-    tieba_spider = TiebaSpider("lol")
+    tieba_spider = TiebaSpider("甄嬛传")
     tieba_spider.run()
